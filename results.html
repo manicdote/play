@@ -3,18 +3,95 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PSYC 303 Project</title>
+  <title>PSYC 303 Project – Results</title>
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/results.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-	<h1>Your results</h1>
-	<p class="subtitle">From your choices this week, you received the following diagnostic impression: </p>
-	<p class="buttonwrap"><a href="index.html" id="startbutton">START OVER</a></p>
+  <div class="results-page">
+    <div class="results-card">
+      <div class="results-header">
+        <h1>Your results</h1>
+        <p class="subtitle">
+          Based on your choices for the past week, here is your final diagnostic impression:
+        </p>
+      </div>
+
+      <div class="results-grid">
+        <section class="card-section">
+          <h2>Diagnostic impression</h2>
+          <div class="diagnostic-pill">
+            Final diagnosis
+          </div>
+          <p id="diagnosisTitle" class="diagnostic-label">Calculating…</p>
+
+          <p id="diagnosisDescription" class="results-note">
+          </p>
+        </section>
+
+        <section class="card-section">
+          <h2>Breakdown of your choices</h2>
+          <div class="chart-wrapper">
+            <canvas id="resultsChart" width="280" height="280"></canvas>
+          </div>
+        </section>
+      </div>
+
+      <div class="results-table-wrapper">
+        <h3>Details by category</h3>
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Count</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="label-cell">
+                <span class="pill pill-manic">Manic</span>
+              </td>
+              <td data-type="manic-count">0</td>
+              <td data-type="manic-percent">0%</td>
+            </tr>
+            <tr>
+              <td class="label-cell">
+                <span class="pill pill-depressive">Depressive</span>
+              </td>
+              <td data-type="depressive-count">0</td>
+              <td data-type="depressive-percent">0%</td>
+            </tr>
+            <tr>
+              <td class="label-cell">
+                <span class="pill pill-hypomanic">Hypomanic</span>
+              </td>
+              <td data-type="hypomanic-count">0</td>
+              <td data-type="hypomanic-percent">0%</td>
+            </tr>
+            <tr>
+              <td class="label-cell">
+                <span class="pill pill-nondiagnostic">Non-diagnostic</span>
+              </td>
+              <td data-type="nondiagnostic-count">0</td>
+              <td data-type="nondiagnostic-percent">0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="restart-wrap">
+        <a href="index.html" class="restart-button">Start over</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/results.js"></script>
 </body>
 
 </html>
