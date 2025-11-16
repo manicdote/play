@@ -110,4 +110,22 @@ p, a {
 	text-align: center;
 	font-family: 'Roboto';
 }
+
+.container {
+ 	display: flex;
+    justify-content: space-between; 
+    width: 95%;
+}
+/**
+.container > div {
+    flex: 1;
+} 
+**/
+
+.subtitle-2 {
+	text-align: center;
+	font-family: 'Gameplay';
+	font-size: 200%;
+}
+
 /* end of misc. */
