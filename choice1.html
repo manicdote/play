@@ -1,5 +1,57 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
+		<title>PSYC 303 Project</title>
+		<meta name="author" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<p class="vignette">You wake up in the morning, ready for a day of school, work, and hanging out with friends. It's a cold winter day and your room is a little messy.</p>
+		<section class="choiceframe" id="choicetitles">
+			<!-- Manic -->
+			<h2>You feel great and decide to skip class and work on your biggest project.</h2>
+			<!-- Depressive -->
+			<h2>You feel tired and you can't help but go back to bed.</h2>
+		</section>
+		<section class="choiceframe">
+			<div class="opt1">
+				<!-- Manic -->
+				<a class="optlink" href="choice2.html" data-diagnostic="manic">
+					<img class="optimg" src="img/choice2/Manic.png">
+				</a>
+			</div>
+			<div class="opt2">
+				<!-- Depressive -->
+				<a class="optlink" href="choice2.html" data-diagnostic="depressive">
+					<img class="optimg" src="img/choice2/Depressive.png">
+				</a>
+			</div>
+		</section>
+		<section class="choiceframe" id="choicetitles">
+			<!-- Non-diagnostic -->
+			<h2>You feel alright, and follow your morning routine before class.</h2>
+			<!-- Hypomanic -->
+			<h2>You wake up feeling pretty good and decide to do all of your chores, even if it means being slightly late to class.</h2>
+		</section>
+		<section class="choiceframe">
+			<div class="opt3">
+				<!-- Non-diagnostic -->
+				<a class="optlink" href="choice2.html" data-diagnostic="nondiagnostic">
+					<img class="optimg" src="img/choice2/Nondiagnostic.png">
+				</a>
+			</div>
+			<div class="opt4">
+				<!-- Hypomanic -->
+				<a class="optlink" href="choice2.html" data-diagnostic="hypomanic">
+					<img class="optimg" src="img/choice2/Hypomanic.png">
+				</a>
+			</div>
+		</section>
+		<script src="js/diagnostic-tracker.js"></script>
+	</body>
 
 <head>
   <meta charset="utf-8">

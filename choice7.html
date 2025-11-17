@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>PSYC 303 Project</title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-	<p class="vignette">You wake up on a nice Sunday morning and see that your apartment has been getting a bit messy. You have a pile of laundry on your floor and dishes in the sink from dinner last night.</p>
-	<section class="choiceframe" id="choicetitles">
-		<!-- Manic -->
-		<h2>You clean for hours, hyperfixated on making sure that everything is immaculately clean. You deep clean the bathroom, kitchen, and your room until the early morning hours on Monday.</h2>
-		<!-- Depressive -->
-		<h2>You are still tired even after the full night’s sleep. You look at the pile of dirty laundry and feel guilty that you have not washed it yet..</h2>
-	</section>
-	<section class="choiceframe">
-		<div class="opt1">
-			<a class="optlink" href="results.html"><img class="optimg" src="img/choice7/Manic.png"></a>
-		</div>
-		<div class="opt2">
-			<a class = "optlink" href="results.html"><img class="optimg" src="img/choice7/Depressive.png"></a>
-		</div>
-	</section>
-	<section class="choiceframe" id="choicetitles">
-		<!-- Non-diagnostic -->
-		<h2>You get up and wash the dishes. Once that is done, you throw in a load of laundry and learn a new song on the guitar as the cycle goes.</h2>
-		<!-- Hypomanic -->
-		<h2>You start cleaning your room but get distracted by a wobble in your desk chair. You spend the rest of the day trying to fix your desk chair.</h2>
-	</section>
-	<section class="choiceframe">
-		<div class="opt3">
-			<a class="optlink" href="results.html"><img class="optimg" src="img/choice7/Nondiagnostic.png"></a>
-		</div>
-		<div class="opt4">
-			<a class = "optlink" href="results.html"><img class="optimg" src="img/choice7/Hypomanic.png"></a>
-		</div>
-	</section>
-</body>
-
+	<head>
+		<meta charset="utf-8">
+		<title>PSYC 303 Project</title>
+		<meta name="author" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<p class="vignette">You wake up on a nice Sunday morning and see that your apartment has been getting a bit messy. You have a pile of laundry on your floor and dishes in the sink from dinner last night.</p>
+		<section class="choiceframe" id="choicetitles">
+			<!-- Manic -->
+			<h2>You clean for hours, hyperfixated on making sure that everything is immaculately clean. You deep clean the bathroom, kitchen, and your room until the early morning hours on Monday.</h2>
+			<!-- Depressive -->
+			<h2>You are still tired even after the full night’s sleep. You look at the pile of dirty laundry and feel guilty that you have not washed it yet..</h2>
+		</section>
+		<section class="choiceframe">
+			<div class="opt1">
+				<a class="optlink" href="results.html" data-diagnostic="manic">
+					<img class="optimg" src="img/choice7/Manic.png">
+				</a>
+			</div>
+			<div class="opt2">
+				<a class="optlink" href="results.html" data-diagnostic="depressive">
+					<img class="optimg" src="img/choice7/Depressive.png">
+				</a>
+			</div>
+		</section>
+		<section class="choiceframe" id="choicetitles">
+			<!-- Non-diagnostic -->
+			<h2>You get up and wash the dishes. Once that is done, you throw in a load of laundry and learn a new song on the guitar as the cycle goes.</h2>
+			<!-- Hypomanic -->
+			<h2>You start cleaning your room but get distracted by a wobble in your desk chair. You spend the rest of the day trying to fix your desk chair.</h2>
+		</section>
+		<section class="choiceframe">
+			<div class="opt3">
+				<a class="optlink" href="results.html" data-diagnostic="nondiagnostic">
+					<img class="optimg" src="img/choice7/Nondiagnostic.png">
+				</a>
+			</div>
+			<div class="opt4">
+				<a class="optlink" href="results.html" data-diagnostic="hypomanic">
+					<img class="optimg" src="img/choice7/Hypomanic.png">
+				</a>
+			</div>
+		</section>
+		<script src="js/diagnostic-tracker.js"></script>
+	</body>
 </html>
