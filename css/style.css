@@ -61,6 +61,8 @@ html, body {
 #choicetitles {
 	text-align: center;
 	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 30px;
 	width: 80%;
 	height: 10%;
 }
@@ -96,6 +98,7 @@ h1 {
 	font-size: 200%;
 	width: 80%;
 	margin: 0 auto;
+	margin-bottom: 50px;
 	background-color: #FFF;
 }
 
